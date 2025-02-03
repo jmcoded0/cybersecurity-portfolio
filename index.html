@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnson Mathew | Cybersecurity Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background-color: #121212;
             color: #fff;
             margin: 0;
@@ -29,15 +30,58 @@
         a {
             color: #4CAF50;
             text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #66ff66;
+        }
+        .navbar {
+            background: #1e1e1e;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+        .contact p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
+
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
     <div class="container">
-        <h1>Hi, I'm Johnson Mathew</h1>
+        <h1 id="about">Hi, I'm Johnson Mathew</h1>
         <p>🚀 Passionate SOC Analyst dedicated to detecting, analyzing, and mitigating cyber threats. Experienced in security monitoring, vulnerability assessment, and cloud security. Certified in ISC2 CC, Google Cybersecurity, and Google Cloud Security. Always learning and evolving in the cybersecurity field.</p>
         
-        <div class="section">
+        <div class="section" id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>Threat Detection & Incident Response</li>
@@ -52,7 +96,7 @@
             </ul>
         </div>
         
-        <div class="section">
+        <div class="section" id="projects">
             <h2>Projects</h2>
             <ul>
                 <li><strong>Network Incident Analysis:</strong> <a href="https://github.com/jmcoded0/Network-Incident-Analysis/blob/main/Netork%20Incident%20%20Anaysis.pdf" target="_blank">View Report</a></li>
@@ -64,11 +108,12 @@
             </ul>
         </div>
         
-        <div class="section">
+        <div class="section contact" id="contact">
             <h2>Contact</h2>
             <p>📧 Email: johnsonmatthewayobami@gmail.com</p>
             <p>🔗 <a href="https://github.com/jmcoded0" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
         </div>
     </div>
+
 </body>
 </html>
