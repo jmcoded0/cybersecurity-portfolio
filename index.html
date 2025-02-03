@@ -72,24 +72,51 @@
         }
 
         .project-item {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
+
+        .project-card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
         .project-title {
             font-weight: bold;
             color: #e0e0e0;
-            margin-right: 5px;
-            display: inline-block;
+            margin-bottom: 10px;
+            flex-grow: 1;
         }
+
         .project-link {
             display: inline-block;
             padding: 8px 16px;
             background-color: #007bff;
             color: white;
             border-radius: 5px;
+            text-decoration: none;
             transition: background-color 0.3s ease;
+            margin-top: auto;
         }
+
         .project-link:hover {
             background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .project-card {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -137,39 +164,36 @@
             <h2>Projects</h2>
             <ul>
                 <li class="project-item">
-                    <span class="project-title">Network Incident Analysis:</span>
-                    <a class="project-link" href="https://github.com/jmcoded0/Network-Incident-Analysis/blob/main/Netork%20Incident%20%20Anaysis.pdf" target="_blank">View Report</a>
+                    <div class="project-card">
+                        <h3 class="project-title">Network Incident Analysis</h3>
+                        <a class="project-link" href="https://github.com/jmcoded0/Network-Incident-Analysis/blob/main/Netork%20Incident%20%20Anaysis.pdf" target="_blank">View Report</a>
+                    </div>
                 </li>
                 <li class="project-item">
-                    <span class="project-title">SQL Query Activity:</span>
-                    <a class="project-link" href="https://github.com/jmcoded0/SQL-query-activity/blob/main/Apply%20filters%20to%20SQL%20queries.pdf" target="_blank">View Report</a>
+                    <div class="project-card">
+                        <h3 class="project-title">SQL Query Activity</h3>
+                        <a class="project-link" href="https://github.com/jmcoded0/SQL-query-activity/blob/main/Apply%20filters%20to%20SQL%20queries.pdf" target="_blank">View Report</a>
+                    </div>
                 </li>
                 <li class="project-item">
-                    <span class="project-title">Vulnerability Assessment Report:</span>
-                    <a class="project-link" href="https://github.com/jmcoded0/Vulnerability-assessment-report/blob/main/Vulnerability%20assessment%20report.pdf" target="_blank">View Report</a>
+                    <div class="project-card">
+                        <h3 class="project-title">Vulnerability Assessment Report</h3>
+                        <a class="project-link" href="https://github.com/jmcoded0/Vulnerability-assessment-report/blob/main/Vulnerability%20assessment%20report.pdf" target="_blank">View Report</a>
+                    </div>
                 </li>
                 <li class="project-item">
-                    <span class="project-title">Security Audit:</span>
-                    <a class="project-link" href="https://github.com/jmcoded0/Security-Audit/blob/main/Controls%20and%20compliance%20checklist%20(My%20Security%20Audit).pdf" target="_blank">View Report</a>
+                    <div class="project-card">
+                        <h3 class="project-title">Security Audit</h3>
+                        <a class="project-link" href="https://github.com/jmcoded0/Security-Audit/blob/main/Controls%20and%20compliance%20checklist%20(My%20Security%20Audit).pdf" target="_blank">View Report</a>
+                    </div>
                 </li>
                 <li class="project-item">
-                    <span class="project-title">Incident Handler's Journal:</span>
-                    <a class="project-link" href="https://github.com/jmcoded0/Incident-handler-journal/blob/main/Incident%20handler's%20journal.pdf" target="_blank">View Report</a>
+                    <div class="project-card">
+                        <h3 class="project-title">Incident Handler's Journal</h3>
+                        <a class="project-link" href="https://github.com/jmcoded0/Incident-handler-journal/blob/main/Incident%20handler's%20journal.pdf" target="_blank">View Report</a>
+                    </div>
                 </li>
                 <li class="project-item">
-                    <span class="project-title">Python Algorithm Report:</span>
-                    <a class="project-link" href="https://github.com/jmcoded0/Python-algorithm/blob/main/Python%20Algorithm.pdf" target="_blank">View Report</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Contact</h2>
-            <p>📧 Email: johnsonmatthewayobami@gmail.com</p>
-            <p>📞 Phone: +2349039909195</p>
-            <p>🔗 <a href="https://github.com/jmcoded0" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
-        </div>
-
-    </div>
-</body>
-</html>
+                    <div class="project-card">
+                        <h3 class="project-title">Python Algorithm Report</h3>
+                        <a class="project-link" href="https://github.com/j
