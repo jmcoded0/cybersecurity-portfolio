@@ -18,10 +18,10 @@
             max-width: 960px;
             margin: 20px auto;
             padding: 20px;
-            position: relative; /* Needed for absolute positioning */
+            position: relative;
         }
         h1, h2, h3 {
-            color: #66cdaa;
+            color: #007bff; /* Consistent blue color */
         }
         .section {
             margin-bottom: 30px;
@@ -31,21 +31,20 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         a {
-            color: #66cdaa;
+            color: #007bff; /* Consistent blue for links */
             text-decoration: none;
             transition: color 0.3s ease;
         }
         a:hover {
-            color: #50a080;
+            color: #0056b3; /* Darker blue on hover */
         }
         ul {
             list-style-type: disc;
             padding-left: 20px;
         }
         strong {
-            color: #66cdaa;
+            color: #007bff; /* Consistent blue for strong text */
         }
-
         .philosophy-top-right {
             position: absolute;
             top: 20px;
@@ -55,11 +54,9 @@
             color: #a0a0a0;
             text-align: right;
         }
-
         .container {
-          padding-top: 60px; /* Add top padding to accommodate the philosophy section */
+          padding-top: 60px;
       }
-
         @media (max-width: 768px) {
             .philosophy-top-right {
                 position: relative;
@@ -70,9 +67,25 @@
                 margin-top: 20px;
             }
             .container {
-                padding-top: 20px; /* Reset padding for smaller screens */
+                padding-top: 20px;
             }
         }
+
+        /* Styles for project links */
+        .project-link {
+            display: inline-block; /* Makes the link a block element */
+            padding: 8px 16px;      /* Adds padding around the link text */
+            background-color: #007bff; /* Blue background */
+            color: white;            /* White text */
+            border-radius: 5px;      /* Rounded corners */
+            margin-bottom: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .project-link:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+
     </style>
 </head>
 <body>
@@ -118,12 +131,12 @@
         <div class="section">
             <h2>Projects</h2>
             <ul>
-                <li><strong>Network Incident Analysis:</strong> <a href="https://github.com/jmcoded0/Network-Incident-Analysis/blob/main/Netork%20Incident%20%20Anaysis.pdf" target="_blank">View Report</a></li>
-                <li><strong>SQL Query Activity:</strong> <a href="https://github.com/jmcoded0/SQL-query-activity/blob/main/Apply%20filters%20to%20SQL%20queries.pdf" target="_blank">View Report</a></li>
-                <li><strong>Vulnerability Assessment Report:</strong> <a href="https://github.com/jmcoded0/Vulnerability-assessment-report/blob/main/Vulnerability%20assessment%20report.pdf" target="_blank">View Report</a></li>
-                <li><strong>Security Audit:</strong> <a href="https://github.com/jmcoded0/Security-Audit/blob/main/Controls%20and%20compliance%20checklist%20(My%20Security%20Audit).pdf" target="_blank">View Report</a></li>
-                <li><strong>Incident Handler's Journal:</strong> <a href="https://github.com/jmcoded0/Incident-handler-journal/blob/main/Incident%20handler's%20journal.pdf" target="_blank">View Report</a></li>
-                <li><strong>Python Algorithm Report:</strong> <a href="https://github.com/jmcoded0/Python-algorithm/blob/main/Python%20Algorithm.pdf" target="_blank">View Report</a></li>
+                <li><a class="project-link" href="https://github.com/jmcoded0/Network-Incident-Analysis/blob/main/Netork%20Incident%20%20Anaysis.pdf" target="_blank">Network Incident Analysis</a></li>
+                <li><a class="project-link" href="https://github.com/jmcoded0/SQL-query-activity/blob/main/Apply%20filters%20to%20SQL%20queries.pdf" target="_blank">SQL Query Activity</a></li>
+                <li><a class="project-link" href="https://github.com/jmcoded0/Vulnerability-assessment-report/blob/main/Vulnerability%20assessment%20report.pdf" target="_blank">Vulnerability Assessment Report</a></li>
+                <li><a class="project-link" href="https://github.com/jmcoded0/Security-Audit/blob/main/Controls%20and%20compliance%20checklist%20(My%20Security%20Audit).pdf" target="_blank">Security Audit</a></li>
+                <li><a class="project-link" href="https://github.com/jmcoded0/Incident-handler-journal/blob/main/Incident%20handler's%20journal.pdf" target="_blank">Incident Handler's Journal</a></li>
+                <li><a class="project-link" href="https://github.com/jmcoded0/Python-algorithm/blob/main/Python%20Algorithm.pdf" target="_blank">Python Algorithm Report</a></li>
             </ul>
         </div>
 
