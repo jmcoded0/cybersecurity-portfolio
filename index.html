@@ -5,48 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathew | Cybersecurity Portfolio</title>
     <style>
-        /* ... (Your existing body, container, heading, section, link, list, strong, philosophy styles) ... */
-
-        /* Improved Project Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            position: relative;
+        }
+        header {
+            background: #1e1e1e;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header nav a {
+            color: #007bff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            color: #0056b3;
+        }
+        .profile-pic {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #007bff;
+        }
+        .philosophy-top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 30%;
+            font-style: italic;
+            color: #a0a0a0;
+            text-align: right;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
         .project-item {
-            margin-bottom: 10px; /* Reduced spacing */
+            margin-bottom: 10px;
         }
-
-        .project-card {
-            background-color: #1e1e1e;
-            border-radius: 8px;
-            padding: 15px; /* Slightly reduced padding */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            display: flex;
-            flex-direction: column;
-            min-height: 150px; /* Minimum height for cards */
+        .project-title {
+            font-weight: bold;
+            color: #e0e0e0;
+            margin-right: 5px;
+            display: inline-block;
         }
-
-        .project-card:hover { /* ... (Your hover styles) ... */ }
-        .project-title { /* ... (Your title styles) ... */ }
-        .project-link { /* ... (Your link styles) ... */ }
-        @media (max-width: 768px) { /* ... (Your media query) ... */ }
-
+        .project-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .project-link:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding-top: 80px;
+            }
+            header nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#tools">Tools</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
     <div class="container">
-
-        <div class="philosophy-top-right">
-            "If you don't have any shadows, you're not standing in the light."
-        </div>
-
+        <div class="philosophy-top-right">"If you don't have any shadow, you're not standing in the light."</div>
+        <img class="profile-pic" src="profile.jpg" alt="Profile Picture">
         <h1>Hi, I'm Mathew</h1>
 
-        <div class="section">
+        <div id="about" class="section">
             <h2>About Me</h2>
-            <p>🚀 Passionate SOC Analyst who thrives at the intersection of technology and security. With advanced certifications in ISC2 CC, Google Cybersecurity, and Google Cloud Security, I leverage cutting-edge tools and methodologies to outsmart cyber adversaries and safeguard critical infrastructure.</p>
-            <p>My expertise lies in rapid threat detection, incisive incident response, and proactive vulnerability management. I combine analytical rigor with innovative thinking to transform complex security challenges into opportunities for growth and resilience.</p>
-            <p><strong>Beyond the screens and code</strong>, I'm passionate about empowering organizations through knowledge sharing and strategic collaboration. Whether I'm dissecting network traffic with precision tools or pioneering novel security solutions, my mission is clear: to forge a safer digital world where innovation and security go hand in hand.</p>
+            <p>🚀 Passionate SOC Analyst...</p>
         </div>
 
-        <div class="section">
+        <div id="certifications" class="section">
             <h2>Certifications</h2>
             <ul>
                 <li>✅ ISC2 CC</li>
@@ -55,70 +141,17 @@
             </ul>
         </div>
 
-        <div class="section">
-            <h2>Cybersecurity & Cloud Tools</h2>
-            <p>As part of my cybersecurity journey, I have hands-on experience with various security tools, including:</p>
-            <ul>
-                <li>SIEM (Splunk, Chronicle, Microsoft Sentinel)</li>
-                <li>EDR (CrowdStrike, Microsoft Defender, Sophos)</li>
-                <li>Network Security (Wireshark, Snort, Suricata)</li>
-                <li>Cloud Security (Google Cloud Security Command Center, AWS Security Hub, Azure Defender)</li>
-                <li>Threat Intelligence (VirusTotal, MISP, AlienVault OTX)</li>
-                <li>Forensics & Log Analysis (ELK Stack, Autopsy, Sysmon)</li>
-                <li>Vulnerability Assessment (Nessus, OpenVAS, Qualys)</li>
-                <li>Automation & Scripting (Python, Bash, PowerShell)</li>
-            </ul>
-        </div>
-
-        <div class="section">
+        <div id="projects" class="section">
             <h2>Projects</h2>
             <ul>
-                <li class="project-item">
-                    <div class="project-card">
-                        <h3 class="project-title">Network Incident Analysis</h3>
-                        <a class="project-link" href="https://github.com/jmcoded0/Network-Incident-Analysis/blob/main/Netork%20Incident%20%20Anaysis.pdf" target="_blank">View Report</a>
-                    </div>
-                </li>
-                <li class="project-item">
-                    <div class="project-card">
-                        <h3 class="project-title">SQL Query Activity</h3>
-                        <a class="project-link" href="https://github.com/jmcoded0/SQL-query-activity/blob/main/Apply%20filters%20to%20SQL%20queries.pdf" target="_blank">View Report</a>
-                    </div>
-                </li>
-                <li class="project-item">
-                    <div class="project-card">
-                        <h3 class="project-title">Vulnerability Assessment Report</h3>
-                        <a class="project-link" href="https://github.com/jmcoded0/Vulnerability-assessment-report/blob/main/Vulnerability%20assessment%20report.pdf" target="_blank">View Report</a>
-                    </div>
-                </li>
-                <li class="project-item">
-                    <div class="project-card">
-                        <h3 class="project-title">Security Audit</h3>
-                        <a class="project-link" href="https://github.com/jmcoded0/Security-Audit/blob/main/Controls%20and%20compliance%20checklist%20(My%20Security%20Audit).pdf" target="_blank">View Report</a>
-                    </div>
-                </li>
-                <li class="project-item">
-                    <div class="project-card">
-                        <h3 class="project-title">Incident Handler's Journal</h3>
-                        <a class="project-link" href="https://github.com/jmcoded0/Incident-handler-journal/blob/main/Incident%20handler's%20journal.pdf" target="_blank">View Report</a>
-                    </div>
-                </li>
-                <li class="project-item">
-                    <div class="project-card">
-                        <h3 class="project-title">Python Algorithm Report</h3>
-                        <a class="project-link" href="https://github.com/jmcoded0/Python-algorithm/blob/main/Python%20Algorithm.pdf" target="_blank">View Report</a>
-                    </div>
-                </li>
+                <li class="project-item"><span class="project-title">Network Incident Analysis:</span><a class="project-link" href="https://github.com/jmcoded0/Network-Incident-Analysis">View Report</a></li>
+                <li class="project-item"><span class="project-title">SQL Query Activity:</span><a class="project-link" href="https://github.com/jmcoded0/SQL-query-activity">View Report</a></li>
+                <li class="project-item"><span class="project-title">Vulnerability Assessment Report:</span><a class="project-link" href="https://github.com/jmcoded0/Vulnerability-assessment-report">View Report</a></li>
+                <li class="project-item"><span class="project-title">Security Audit:</span><a class="project-link" href="https://github.com/jmcoded0/Security-Audit">View Report</a></li>
+                <li class="project-item"><span class="project-title">Incident Handler's Journal:</span><a class="project-link" href="https://github.com/jmcoded0/Incident-handler-journal">View Report</a></li>
+                <li class="project-item"><span class="project-title">Python Algorithm Report:</span><a class="project-link" href="https://github.com/jmcoded0/Python-algorithm">View Report</a></li>
             </ul>
         </div>
-
-        <div class="section">
-            <h2>Contact</h2>
-            <p>📧 Email: johnsonmatthewayobami@gmail.com</p>
-            <p>📞 Phone: +2349039909195</p>
-            <p>🔗 <a href="https://github.com/jmcoded0" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
-        </div>
-
     </div>
 </body>
 </html>
