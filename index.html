@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnson Mathew | Cybersecurity Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #121212;
             color: #fff;
             margin: 0;
@@ -30,69 +29,62 @@
         a {
             color: #4CAF50;
             text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
         }
-        a:hover {
-            text-decoration: underline;
-            color: #66ff66;
+        .certification {
+            display: flex;
+            justify-content: space-around;
         }
-        .navbar {
-            background: #1e1e1e;
-            padding: 10px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        .navbar a {
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-        .navbar a:hover {
-            color: #4CAF50;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 5px 0;
-        }
-        .contact p {
-            margin: 5px 0;
+        .certification img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-
-    <div class="navbar">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
-
     <div class="container">
-        <h1 id="about">Hi, I'm Johnson Mathew</h1>
+        <h1>Hi, I'm Johnson Mathew</h1>
         <p>🚀 Passionate SOC Analyst dedicated to detecting, analyzing, and mitigating cyber threats. Experienced in security monitoring, vulnerability assessment, and cloud security. Certified in ISC2 CC, Google Cybersecurity, and Google Cloud Security. Always learning and evolving in the cybersecurity field.</p>
         
-        <div class="section" id="skills">
-            <h2>Skills</h2>
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>Hello, I'm Mathew—a cybersecurity enthusiast and dedicated SOC Analyst who thrives at the intersection of technology and security. With advanced certifications in ISC2 CC, Google Cybersecurity, and Google Cloud Security, I leverage cutting-edge tools and methodologies to outsmart cyber adversaries and safeguard critical infrastructure.</p>
+            <p>My expertise lies in rapid threat detection, incisive incident response, and proactive vulnerability management. I combine analytical rigor with innovative thinking to transform complex security challenges into opportunities for growth and resilience. Every day, I embrace new challenges, staying ahead of evolving threats and continuously expanding my technical repertoire.</p>
+            <p>Beyond the screens and code, I'm passionate about empowering organizations through knowledge sharing and strategic collaboration. Whether I'm dissecting network traffic with precision tools or pioneering novel security solutions, my mission is clear: to forge a safer digital world where innovation and security go hand in hand.</p>
+        </div>
+        
+        <div class="section" id="certifications">
+            <h2>Certifications & Achievements</h2>
+            <div class="certification">
+                <div>
+                    <img src="https://via.placeholder.com/120x120.png?text=ISC2+CC" alt="ISC2 CC Logo">
+                    <p>ISC2 CC</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/120x120.png?text=Google+Cybersecurity" alt="Google Cybersecurity Logo">
+                    <p>Google Cybersecurity</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/120x120.png?text=Google+Cloud+Security" alt="Google Cloud Security Logo">
+                    <p>Google Cloud Security</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" id="tools">
+            <h2>Tools & Technologies</h2>
             <ul>
-                <li>Threat Detection & Incident Response</li>
-                <li>SIEM (Security Information and Event Management)</li>
-                <li>Cloud Security & Compliance</li>
-                <li>Log Analysis & Forensics</li>
-                <li>Vulnerability Management</li>
-                <li>Network Security & Intrusion Detection</li>
-                <li>Risk Assessment & Security Best Practices</li>
-                <li>SQL for Security Analysis</li>
-                <li>Automation & Scripting (Basic Security Automation)</li>
+                <li><strong>SIEM Tools:</strong> Splunk, ELK Stack, IBM QRadar, LogRhythm, ArcSight</li>
+                <li><strong>Cloud Security:</strong> Google Cloud Security, AWS Security Hub, Azure Security Center, Cloudflare, Prisma Cloud</li>
+                <li><strong>Vulnerability Scanning:</strong> Nessus, OpenVAS, Qualys, Nexpose, Burp Suite</li>
+                <li><strong>Incident Response & Forensics:</strong> Wireshark, Volatility, FTK Imager, Autopsy, X1 Social Discovery</li>
+                <li><strong>Network Security:</strong> Snort, Suricata, Nmap, Zeek (formerly Bro), Wireshark</li>
+                <li><strong>Programming & Scripting:</strong> Python, Bash, PowerShell, SQL, GoLang, Perl</li>
+                <li><strong>Automation & Orchestration:</strong> Ansible, Terraform, Kubernetes, Docker, Jenkins, GitLab CI</li>
+                <li><strong>Cloud Platforms:</strong> AWS, Google Cloud, Microsoft Azure, Oracle Cloud</li>
+                <li><strong>Endpoint Security & EDR:</strong> CrowdStrike, SentinelOne, Carbon Black, Sophos, McAfee</li>
+                <li><strong>Threat Intelligence & Hunting:</strong> MISP, ThreatConnect, OpenDXL, VirusTotal</li>
+                <li><strong>Compliance & Governance Tools:</strong> CIS-CAT, AWS Config, Azure Policy, OpenSCAP</li>
             </ul>
         </div>
         
@@ -108,12 +100,12 @@
             </ul>
         </div>
         
-        <div class="section contact" id="contact">
+        <div class="section" id="contact">
             <h2>Contact</h2>
-            <p>📧 Email: johnsonmatthewayobami@gmail.com</p>
+            <p>📧 Email: <a href="mailto:johnsonmatthewayobami@gmail.com">johnsonmatthewayobami@gmail.com</a></p>
+            <p>📱 Phone: <a href="tel:+2349039909195">+2349039909195</a></p>
             <p>🔗 <a href="https://github.com/jmcoded0" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
         </div>
     </div>
-
 </body>
 </html>
