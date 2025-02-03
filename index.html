@@ -5,72 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathew | Cybersecurity Portfolio</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            max-width: 960px;
-            margin: 20px auto;
-            padding: 20px;
-            position: relative;
-        }
-        h1, h2, h3 {
-            color: #007bff;
-        }
-        .section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #0056b3;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        strong {
-            color: #007bff;
-        }
-        .philosophy-top-right {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 30%;
-            font-style: italic;
-            color: #a0a0a0;
-            text-align: right;
-        }
-        .container {
-          padding-top: 60px;
-      }
-        @media (max-width: 768px) {
-            .philosophy-top-right {
-                position: relative;
-                top: auto;
-                right: auto;
-                width: 100%;
-                text-align: center;
-                margin-top: 20px;
-            }
-            .container {
-                padding-top: 20px;
-            }
-        }
+        body { /* ... (Your existing body styles) ... */ }
+        .container { /* ... (Your existing container styles) ... */ }
+        h1, h2, h3 { /* ... (Your existing heading styles) ... */ }
+        .section { /* ... (Your existing section styles) ... */ }
+        a { /* ... (Your existing link styles) ... */ }
+        ul { /* ... (Your existing list styles) ... */ }
+        strong { /* ... (Your existing strong styles) ... */ }
+        .philosophy-top-right { /* ... (Your existing philosophy styles) ... */ }
+        @media (max-width: 768px) { /* ... (Your existing media query) ... */ }
 
+        /* Improved Project Styles */
         .project-item {
             margin-bottom: 20px;
         }
@@ -82,8 +27,8 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             display: flex;
-            flex-direction: column;
-            height: 100%;
+            flex-direction: column; /* Stack elements vertically */
+            min-height: 200px; /* Set a minimum height for all cards */
         }
 
         .project-card:hover {
@@ -95,7 +40,7 @@
             font-weight: bold;
             color: #e0e0e0;
             margin-bottom: 10px;
-            flex-grow: 1;
+            flex-grow: 1; /* Allow title to expand */
         }
 
         .project-link {
@@ -106,7 +51,7 @@
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s ease;
-            margin-top: auto;
+            margin-top: auto;  /* Push to bottom */
         }
 
         .project-link:hover {
@@ -118,6 +63,32 @@
                 flex-direction: column;
             }
         }
+
+        /* Contact Section - moved to the top */
+        .contact-top {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px; /* Space below contact info */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Align items to left and right */
+            align-items: center; /* Vertically center items */
+        }
+
+        .contact-info {
+            /* Styles for your contact details */
+        }
+
+        .contact-links {
+            text-align: right; /* Align links to the right */
+        }
+
+        .contact-links a {
+            margin-left: 10px; /* Space between links */
+        }
+
+
     </style>
 </head>
 <body>
@@ -128,6 +99,16 @@
         </div>
 
         <h1>Hi, I'm Mathew</h1>
+
+        <div class="contact-top">  <div class="contact-info">
+                <p>📧 Email: johnsonmatthewayobami@gmail.com</p>
+                <p>📞 Phone: +2349039909195</p>
+            </div>
+            <div class="contact-links">
+                <a href="https://github.com/jmcoded0" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
 
         <div class="section">
             <h2>About Me</h2>
@@ -190,10 +171,4 @@
                 <li class="project-item">
                     <div class="project-card">
                         <h3 class="project-title">Incident Handler's Journal</h3>
-                        <a class="project-link" href="https://github.com/jmcoded0/Incident-handler-journal/blob/main/Incident%20handler's%20journal.pdf" target="_blank">View Report</a>
-                    </div>
-                </li>
-                <li class="project-item">
-                    <div class="project-card">
-                        <h3 class="project-title">Python Algorithm Report</h3>
-                        <a class="project-link" href="https://github.com/j
+                        <a class="project-link" href="https://github.com/jmcoded0/Incident-handler-journal/
