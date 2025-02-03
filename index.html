@@ -1,121 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mathew | Cybersecurity Portfolio</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
-            background-color: #121212;
-            color: #e0e0e0; /* Softer white for better readability */
-            margin: 0;
-            padding: 0;
-            line-height: 1.6; /* Improved line height for readability */
-        }
-        .container {
-            width: 80%;
-            max-width: 960px; /* Added max-width for larger screens */
-            margin: 20px auto; /* Centered container */
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #66cdaa; /* Teal accent color */
-        }
-        .section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
-        a {
-            color: #66cdaa;
-            text-decoration: none;
-            transition: color 0.3s ease; /* Smooth color transition on hover */
-        }
-        a:hover {
-            color: #50a080; /* Darker teal on hover */
-        }
-        ul {
-            list-style-type: disc; /* Use bullet points */
-            padding-left: 20px;
-        }
-        strong { /* Style for emphasized text */
-            color: #66cdaa;
-        }
-        /* Added styles for the philosophy quote */
-        .philosophy-quote {
+        /* Styles for the philosophy section at the top right */
+        .philosophy-top-right {
+            position: absolute; /* Position it absolutely within the container */
+            top: 20px;         /* Adjust top spacing as needed */
+            right: 20px;        /* Adjust right spacing as needed */
+            width: 30%;        /* Adjust width as needed */
             font-style: italic;
             color: #a0a0a0;
-            margin-top: 20px;
-            text-align: center; /* Center the quote */
+            text-align: right; /* Align text to the right */
         }
-        /* Responsive Design - adjust as needed */
+
+        /* Adjust container padding to avoid overlap */
+        .container {
+            padding-top: 60px; /* Add top padding to accommodate the philosophy section */
+            position: relative; /* Needed for absolute positioning of the philosophy */
+        }
+
+        /* Responsive adjustments */
         @media (max-width: 768px) {
+            .philosophy-top-right {
+                position: relative; /* Make it relative on smaller screens */
+                top: auto;
+                right: auto;
+                width: 100%;
+                text-align: center;
+                margin-top: 20px; /* Add some top margin */
+            }
             .container {
-                width: 90%;
+                padding-top: 20px; /* Reset padding for smaller screens */
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+
+        <div class="philosophy-top-right">
+            "In cybersecurity, shadows reveal vulnerabilities. A lack of perceived threats doesn't equate to true security, but rather a lack of thorough examination."
+        </div>
+
         <h1>Hi, I'm Mathew</h1>
 
         <div class="section">
             <h2>About Me</h2>
-            <p>🚀 Passionate SOC Analyst who thrives at the intersection of technology and security. With advanced certifications in ISC2 CC, Google Cybersecurity, and Google Cloud Security, I leverage cutting-edge tools and methodologies to outsmart cyber adversaries and safeguard critical infrastructure.</p>
-            <p>My expertise lies in rapid threat detection, incisive incident response, and proactive vulnerability management. I combine analytical rigor with innovative thinking to transform complex security challenges into opportunities for growth and resilience.</p>
-            <p><strong>Beyond the screens and code</strong>, I'm passionate about empowering organizations through knowledge sharing and strategic collaboration. Whether I'm dissecting network traffic with precision tools or pioneering novel security solutions, my mission is clear: to forge a safer digital world where innovation and security go hand in hand.</p>
-
-            <div class="philosophy-quote">
-                "In cybersecurity, shadows reveal vulnerabilities. A lack of perceived threats doesn't equate to true security, but rather a lack of thorough examination."
             </div>
-        </div>
 
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>✅ ISC2 CC</li>
-                <li>✅ Google Cybersecurity Certificate</li>
-                <li>✅ Google Cloud Security Certificate</li>
-            </ul>
         </div>
-
-        <div class="section">
-            <h2>Cybersecurity & Cloud Tools</h2>
-            <p>As part of my cybersecurity journey, I have hands-on experience with various security tools, including:</p>
-            <ul>
-                <li>SIEM (Splunk, Chronicle, Microsoft Sentinel)</li>
-                <li>EDR (CrowdStrike, Microsoft Defender, Sophos)</li>
-                <li>Network Security (Wireshark, Snort, Suricata)</li>
-                <li>Cloud Security (Google Cloud Security Command Center, AWS Security Hub, Azure Defender)</li>
-                <li>Threat Intelligence (VirusTotal, MISP, AlienVault OTX)</li>
-                <li>Forensics & Log Analysis (ELK Stack, Autopsy, Sysmon)</li>
-                <li>Vulnerability Assessment (Nessus, OpenVAS, Qualys)</li>
-                <li>Automation & Scripting (Python, Bash, PowerShell)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Network Incident Analysis:</strong> <a href="https://github.com/jmcoded0/Network-Incident-Analysis/blob/main/Netork%20Incident%20%20Anaysis.pdf" target="_blank">View Report</a></li>
-                <li><strong>SQL Query Activity:</strong> <a href="https://github.com/jmcoded0/SQL-query-activity/blob/main/Apply%20filters%20to%20SQL%20queries.pdf" target="_blank">View Report</a></li>
-                <li><strong>Vulnerability Assessment Report:</strong> <a href="https://github.com/jmcoded0/Vulnerability-assessment-report/blob/main/Vulnerability%20assessment%20report.pdf" target="_blank">View Report</a></li>
-                <li><strong>Security Audit:</strong> <a href="https://github.com/jmcoded0/Security-Audit/blob/main/Controls%20and%20compliance%20checklist%20(My%20Security%20Audit).pdf" target="_blank">View Report</a></li>
-                <li><strong>Incident Handler's Journal:</strong> <a href="https://github.com/jmcoded0/Incident-handler-journal/blob/main/Incident%20handler's%20journal.pdf" target="_blank">View Report</a></li>
-                <li><strong>Python Algorithm Report:</strong> <a href="https://github.com/jmcoded0/Python-algorithm/blob/main/Python%20Algorithm.pdf" target="_blank">View Report</a></li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Contact</h2>
-            <p>📧 Email: johnsonmatthewayobami@gmail.com</p>
-            <p>📞 Phone: +2349039909195</p>
-            <p>🔗 <a href="https://github.com/jmcoded0" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
-        </div>
-    </div>
 </body>
 </html>
