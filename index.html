@@ -5,11 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathew | Cybersecurity Portfolio</title>
     <style>
-        body { /* ... (rest of your styles) ... */ }
-        .container { /* ... (rest of your styles) ... */ }
-        /* ... (all your other CSS styles) ... */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            position: relative; /* Needed for absolute positioning */
+        }
+        h1, h2, h3 {
+            color: #66cdaa;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #66cdaa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #50a080;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        strong {
+            color: #66cdaa;
+        }
 
-        .philosophy-top-right {  /* Styles for the philosophy section */
+        .philosophy-top-right {
             position: absolute;
             top: 20px;
             right: 20px;
@@ -18,12 +55,12 @@
             color: #a0a0a0;
             text-align: right;
         }
+
         .container {
           padding-top: 60px; /* Add top padding to accommodate the philosophy section */
-          position: relative; /* Needed for absolute positioning of the philosophy */
       }
 
-        @media (max-width: 768px) { /* Responsive adjustments */
+        @media (max-width: 768px) {
             .philosophy-top-right {
                 position: relative;
                 top: auto;
@@ -36,7 +73,6 @@
                 padding-top: 20px; /* Reset padding for smaller screens */
             }
         }
-
     </style>
 </head>
 <body>
