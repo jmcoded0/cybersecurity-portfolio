@@ -21,7 +21,7 @@
             position: relative;
         }
         h1, h2, h3 {
-            color: #007bff; /* Consistent blue color */
+            color: #007bff;
         }
         .section {
             margin-bottom: 30px;
@@ -31,19 +31,19 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         a {
-            color: #007bff; /* Consistent blue for links */
+            color: #007bff;
             text-decoration: none;
             transition: color 0.3s ease;
         }
         a:hover {
-            color: #0056b3; /* Darker blue on hover */
+            color: #0056b3;
         }
         ul {
             list-style-type: disc;
             padding-left: 20px;
         }
         strong {
-            color: #007bff; /* Consistent blue for strong text */
+            color: #007bff;
         }
         .philosophy-top-right {
             position: absolute;
@@ -71,28 +71,33 @@
             }
         }
 
-        /* Styles for project links */
+        .project-item {
+            margin-bottom: 10px;
+        }
+        .project-title {
+            font-weight: bold;
+            color: #e0e0e0;
+            margin-right: 5px;
+            display: inline-block;
+        }
         .project-link {
-            display: inline-block; /* Makes the link a block element */
-            padding: 8px 16px;      /* Adds padding around the link text */
-            background-color: #007bff; /* Blue background */
-            color: white;            /* White text */
-            border-radius: 5px;      /* Rounded corners */
-            margin-bottom: 5px;
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
             transition: background-color 0.3s ease;
         }
         .project-link:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #0056b3;
         }
-
-
     </style>
 </head>
 <body>
     <div class="container">
 
         <div class="philosophy-top-right">
-            "In cybersecurity, shadows reveal vulnerabilities. A lack of perceived threats doesn't equate to true security, but rather a lack of thorough examination."
+            "If you don't have any shadows, you're not standing in the light."
         </div>
 
         <h1>Hi, I'm Mathew</h1>
@@ -131,12 +136,30 @@
         <div class="section">
             <h2>Projects</h2>
             <ul>
-                <li><a class="project-link" href="https://github.com/jmcoded0/Network-Incident-Analysis/blob/main/Netork%20Incident%20%20Anaysis.pdf" target="_blank">Network Incident Analysis</a></li>
-                <li><a class="project-link" href="https://github.com/jmcoded0/SQL-query-activity/blob/main/Apply%20filters%20to%20SQL%20queries.pdf" target="_blank">SQL Query Activity</a></li>
-                <li><a class="project-link" href="https://github.com/jmcoded0/Vulnerability-assessment-report/blob/main/Vulnerability%20assessment%20report.pdf" target="_blank">Vulnerability Assessment Report</a></li>
-                <li><a class="project-link" href="https://github.com/jmcoded0/Security-Audit/blob/main/Controls%20and%20compliance%20checklist%20(My%20Security%20Audit).pdf" target="_blank">Security Audit</a></li>
-                <li><a class="project-link" href="https://github.com/jmcoded0/Incident-handler-journal/blob/main/Incident%20handler's%20journal.pdf" target="_blank">Incident Handler's Journal</a></li>
-                <li><a class="project-link" href="https://github.com/jmcoded0/Python-algorithm/blob/main/Python%20Algorithm.pdf" target="_blank">Python Algorithm Report</a></li>
+                <li class="project-item">
+                    <span class="project-title">Network Incident Analysis:</span>
+                    <a class="project-link" href="https://github.com/jmcoded0/Network-Incident-Analysis/blob/main/Netork%20Incident%20%20Anaysis.pdf" target="_blank">View Report</a>
+                </li>
+                <li class="project-item">
+                    <span class="project-title">SQL Query Activity:</span>
+                    <a class="project-link" href="https://github.com/jmcoded0/SQL-query-activity/blob/main/Apply%20filters%20to%20SQL%20queries.pdf" target="_blank">View Report</a>
+                </li>
+                <li class="project-item">
+                    <span class="project-title">Vulnerability Assessment Report:</span>
+                    <a class="project-link" href="https://github.com/jmcoded0/Vulnerability-assessment-report/blob/main/Vulnerability%20assessment%20report.pdf" target="_blank">View Report</a>
+                </li>
+                <li class="project-item">
+                    <span class="project-title">Security Audit:</span>
+                    <a class="project-link" href="https://github.com/jmcoded0/Security-Audit/blob/main/Controls%20and%20compliance%20checklist%20(My%20Security%20Audit).pdf" target="_blank">View Report</a>
+                </li>
+                <li class="project-item">
+                    <span class="project-title">Incident Handler's Journal:</span>
+                    <a class="project-link" href="https://github.com/jmcoded0/Incident-handler-journal/blob/main/Incident%20handler's%20journal.pdf" target="_blank">View Report</a>
+                </li>
+                <li class="project-item">
+                    <span class="project-title">Python Algorithm Report:</span>
+                    <a class="project-link" href="https://github.com/jmcoded0/Python-algorithm/blob/main/Python%20Algorithm.pdf" target="_blank">View Report</a>
+                </li>
             </ul>
         </div>
 
